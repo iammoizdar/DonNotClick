@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+span {
+    display: block;
+    margin-top: 100px;
+}
+
+body {
+    background: hsla(239, 100%, 67%, 1);
+    color: #fff;
+    font-family: sans-serif;
+    font-family: 'Poppins',
+        sans-serif;
+    width: 100%;
+}
+
+.clickme {
+    animation-name: clickme;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+@keyframes clickme {
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+.logo {
+    animation-name: gatsby;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+@keyframes gatsby {
+    0% {
+        left: -24px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
